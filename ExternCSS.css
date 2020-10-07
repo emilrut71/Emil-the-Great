@@ -2,17 +2,20 @@ body {
   background: #B3B6B7;
 
 }
-.column {
-flex-flow: wrap;
-flex-direction: row;
-display: flex;
-justify-content: space-around;
+.box-container {
+  display: flex;
+  	flex-direction: row;
+  	flex-wrap: wrap; /* The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary */
+  	justify-content: space-around; /* The space-around value displays the flex items with space before, between, and after the lines */
 }
-.column > div{
-	max-width: 400px;
+
+.box-container > div{
+	background-color: #f1f1f1;
+	max-width: 100px;
 	margin: 10px;
   	padding: 20px;
 }
+
 img:hover {
   -webkit-transform: scaleX(-1);
   transform scaleX(-1)
@@ -21,3 +24,4 @@ h1 {
   font-size: 70px;
 text-align: center;
 font-family: 'Apple Chancery', cursive;
+}
