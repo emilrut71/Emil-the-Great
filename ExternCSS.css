@@ -1,0 +1,23 @@
+body {
+  background: #B3B6B7;
+
+}
+.column {
+flex-flow: wrap;
+flex-direction: row;
+display: flex;
+justify-content: space-around;
+}
+.column > div{
+	max-width: 400px;
+	margin: 10px;
+  	padding: 20px;
+}
+img:hover {
+  -webkit-transform: scaleX(-1);
+  transform scaleX(-1)
+}
+h1 {
+  font-size: 70px;
+text-align: center;
+font-family: 'Apple Chancery', cursive;
