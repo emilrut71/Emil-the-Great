@@ -1,27 +1,78 @@
+.sektion {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+.sektion h1 {
+  text-align: center;
+  font-size: 7rem;
+  font-family: 'American Typewriter', serif;
+  background: #fff;
+  padding: 20px;
+  margin: 15px;
+  z-index: 1;
+  position: absolute;
+  left 45%;
+  z-index: -1;
+}
+.video-container {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: -100;
+
+}
+
+.vdeo{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+@media (min-aspect-ratio:16/9){
+  .vdeo{
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-aspect-ratio:16/9){
+  .vdeo{
+    width: auto;
+    height: 100%;
+  }
+}
+
+@media (max-width: 100px){
+  .vdeo{
+    background: url('vatten.mov') center center / cover no-repeat;
+  }
+
+  .vdeo{
+    display: none;
+  }
+}
+
 body {
   background: #B3B6B7;
 
 }
-.box-container {
-  display: flex;
-  	flex-direction: row;
-  	flex-wrap: wrap; /* The "flex-wrap: wrap;" specifies that the flex items will wrap if necessary */
-  	justify-content: space-around; /* The space-around value displays the flex items with space before, between, and after the lines */
-}
-
-.box-container > div{
-	background-color: #f1f1f1;
-	max-width: 100px;
-	margin: 10px;
-  	padding: 20px;
 }
 
 img:hover {
   -webkit-transform: scaleX(-1);
   transform scaleX(-1)
 }
-h1 {
-  font-size: 70px;
-text-align: center;
-font-family: 'Apple Chancery', cursive;
+.köpa img {
+
 }
