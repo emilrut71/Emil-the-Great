@@ -1,25 +1,37 @@
-.sektion {
-  position: relative;
+
+.bild {
+  margin: 400px 300px 200px 50px;
+}
+
+.bild h2{
+  font-size: 20px;
+  color: #fff;
+  font-family: 'Brush Script Std', cursive;
+}
+
+ sektion {
+  position: fixed;
   width: 100%;
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
-
 }
+
 .sektion h1 {
+  width: 50%;
+  border-style: double;
   text-align: center;
   font-size: 7rem;
   font-family: 'American Typewriter', serif;
   background: #fff;
-  padding: 20px;
-  margin: 15px;
+  margin: -300px 1px 200px 390px;
   z-index: 1;
   position: absolute;
-  left 45%;
   z-index: -1;
 }
+
 .video-container {
   position: fixed;
   top: 0;
@@ -28,7 +40,6 @@
   left: 0;
   overflow: hidden;
   z-index: -100;
-
 }
 
 .vdeo{
@@ -65,14 +76,4 @@
 
 body {
   background: #B3B6B7;
-
-}
-}
-
-img:hover {
-  -webkit-transform: scaleX(-1);
-  transform scaleX(-1)
-}
-.köpa img {
-
 }
