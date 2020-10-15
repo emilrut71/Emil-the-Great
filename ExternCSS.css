@@ -1,35 +1,32 @@
 
 .bild {
-  margin: 400px 300px 200px 50px;
+  position: absolute;
+  display: inline-block;
+  top: 500px;
+  left: 650px;
 }
 
-.bild h2{
+h2{
   font-size: 20px;
   color: #fff;
   font-family: 'Brush Script Std', cursive;
 }
 
- sektion {
-  position: fixed;
+ .sektion {
+  position: absolute;
   width: 100%;
-  height: 100vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
+  top: 10px;
+  left: 450px;
 
-.sektion h1 {
+}/**/
+
+.sektion h1{
   width: 50%;
-  border-style: double;
+  border-style: solid;
   text-align: center;
   font-size: 7rem;
   font-family: 'American Typewriter', serif;
   background: #fff;
-  margin: -300px 1px 200px 390px;
-  z-index: 1;
-  position: absolute;
-  z-index: -1;
 }
 
 .video-container {
@@ -39,7 +36,7 @@
   bottom: 0;
   left: 0;
   overflow: hidden;
-  z-index: -100;
+  z-index: -2;
 }
 
 .vdeo{
@@ -66,14 +63,10 @@
 
 @media (max-width: 100px){
   .vdeo{
-    background: url('vatten.mov') center center / cover no-repeat;
+    background: url('vatten.mp4') center center / cover no-repeat;
   }
 
   .vdeo{
     display: none;
   }
-}
-
-body {
-  background: #B3B6B7;
 }
