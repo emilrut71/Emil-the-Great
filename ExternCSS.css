@@ -1,9 +1,5 @@
-
-.bild {
-  position: absolute;
-  display: inline-block;
-  top: 500px;
-  left: 650px;
+body {
+  overflow-x: hidden
 }
 
 h2{
@@ -17,8 +13,7 @@ h2{
   width: 100%;
   top: 10px;
   left: 450px;
-
-}/**/
+}
 
 .sektion h1{
   width: 50%;
@@ -39,34 +34,56 @@ h2{
   z-index: -2;
 }
 
-.vdeo{
+.video{
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+
 }
 
 @media (min-aspect-ratio:16/9){
-  .vdeo{
+  .video{
     width: 100%;
     height: auto;
   }
 }
 
 @media (max-aspect-ratio:16/9){
-  .vdeo{
+  .video{
     width: auto;
     height: 100%;
   }
 }
 
 @media (max-width: 100px){
-  .vdeo{
+  .video{
     background: url('vatten.mp4') center center / cover no-repeat;
   }
 
-  .vdeo{
+  .video{
     display: none;
   }
+}
+
+.info {
+  padding: 100em;
+}
+
+.bild {
+  position: absolute;
+  display: inline-block;
+  top: 500px;
+  left: 1300px;
+}
+
+.text {
+  color: #fff;
+  position: absolute;
+  font-size: 29.8px;
+  background-color: rgba(0,0,0,0.5);
+  top: 487px;
+  left: 10px;
+  width: 1290px;
 }
