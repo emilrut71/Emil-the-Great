@@ -1,4 +1,5 @@
 body {
+  background-color: darkgrey;
   overflow-x: hidden
 }
 
@@ -12,17 +13,17 @@ h2{
   display: flex;
   grid-template-columns: repeat(auto-fit, 100px);
   justify-content: space-between;
-  grid-row-gap: 10px;
+  grid-row-gap: 5px;
   grid-column-gap: 1%;
-  margin: 1100px 40px 40px 5px;
-  width:95.4%;
+  margin: 500px 10px 10px 1px;
+  width:30.4%;
 }
 
 .charbild{
   max-width: 100%;
   width: 500px;
   height: 300px;
-  background-position: 20% 20% 20% 20% 20%;
+  background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   object-fit: cover;
@@ -42,10 +43,10 @@ h2{
   color: black;
 }
  .sektion {
-  position: absolute;
+  position: fixed;
   width: 100%;
   top: 10px;
-  left: 570;
+  left: 570px;
 }
 
 .sektion h1{
