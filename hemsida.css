@@ -67,24 +67,3 @@ h2{
   overflow: hidden;
   z-index: -2;
 }
-
-.info {
-  padding: 100em;
-}
-
-.bild {
-  position: absolute;
-  display: inline-block;
-  top: 500px;
-  left: 1910px;
-}
-
-.text {
-  color: #fff;
-  position: absolute;
-  font-size: 35.31px;
-  background-color: rgba(0,0,0,0.5);
-  top: 482px;
-  left: 5px;
-  width: 1900px;
-}
