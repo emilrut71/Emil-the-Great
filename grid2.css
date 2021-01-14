@@ -1,0 +1,43 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-areas:
+   "title content"
+   "header header"
+   "sidebar ."
+   "footer footer";
+}
+
+.title {
+ grid-area: title;
+}
+
+.header {
+ grid-area: header;
+}
+
+.sidebar {
+ grid-area: sidebar;
+}
+
+.content {
+ grid-area: content;
+}
+
+.footer {
+ grid-area: footer;
+}
+
+.container div:nth-child(even) {
+  background-color: red;
+}
+
+.container div:nth-child(odd) {
+  background-color: blue;
+}
