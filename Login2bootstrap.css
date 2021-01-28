@@ -1,0 +1,22 @@
+.bg {
+    background: url('https://cdn.shortpixel.ai/spai/w_745+q_lossy+ret_img+to_webp/https://media1.royalposters.se/2020/07/Karl_XIV_Johans_ram_1420_kroning_1818.jpg');
+    height: 100vh;
+    width: 100%;
+}
+.form-container {
+  height: 70vh;
+  width: 100%;
+  border-style: solid;
+}
+
+.form-group {
+  color: #fff;
+}
+
+.btn {
+  color: #fff;
+  border: 1.5px solid #fff;
+  position: absolute;
+  top: 350px;
+  left: 30px;
+}
