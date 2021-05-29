@@ -50,13 +50,13 @@ h2{
 } //positions the text, changes width and makes some font changes
 
 .video-container {
-  position: fixed; //
+  position: fixed; //Positions the element relative to the browser window
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  overflow: hidden;
-  z-index: -2;
+  overflow: hidden; //takes away the overflow and hides the rest of content
+  z-index: -2; // stack order of this element will be -2
 }
 
 .video{
@@ -68,7 +68,7 @@ h2{
 
 }
 
-@media (min-aspect-ratio:16/9){
+@media (min-aspect-ratio:16/9){ // adjusts video for widescreen of 19 units as width and 9 units of height
   .video{
     width: 100%;
     height: auto;
@@ -79,26 +79,23 @@ h2{
   .video{
     width: auto;
     height: 100%;
-  }
+  } 
 }
 
 @media (max-width: 100px){
   .video{
-    background: url('vatten.mp4') center center / cover no-repeat;
-  }
+    background: url('vatten.mp4') center; 
+  } //when the width of this document is 100px or less the vatten.mp4 will be centered.
 
-  .video{
-    display: none;
-  }
 }
 
 .info {
-  padding: 100em;
+  padding: 100em; //Makes room between the item, text, box or whatever and its border
 }
 
 .bild {
   position: absolute;
-  display: inline-block;
+  display: inline-block; //like display inline except you can change width and height
   top: 500px;
   left: 1910px;
 }
@@ -108,7 +105,7 @@ h2{
   position: absolute;
   font-size: 35.31px;
   background-color: rgba(0,0,0,0.5);
-  top: 482px;
-  left: 5px;
+  top: 482px; //Moves the text-class element on a y-axis
+  left: 5px; //Moves the text-class element on a x-axis
   width: 1900px;
 }
